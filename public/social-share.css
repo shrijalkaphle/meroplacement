@@ -1,0 +1,43 @@
+.share-btn {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position:fixed;
+    top: 50%;
+    right:0px;
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
+  .share-btn a i {
+    font-size:32px;
+  }
+  .share-btn a {
+    margin: 12px 0;
+    transition:0.5s
+  }
+  .share-btn a:hover {
+    transform: scale(1.2);
+  }
+  .fa-facebook {
+    color:#3b5998;
+  }
+  .fa-twitter {
+    color:#00acee;
+  }
+  .fa-linkedin {
+    color:#0e76a8;
+  }
+  @media(max-width: 550px) {
+    .share-btn{
+      padding: 8px;
+    }
+    .share-btn a {
+      margin: 6px 0;
+      transition:0.5s
+    }
+    .share-btn a i {
+      font-size:24px;
+    }
+  }

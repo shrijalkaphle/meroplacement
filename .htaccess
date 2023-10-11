@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On ReWriteCond RewriteRule
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 159.223.68.191
+deny from 192.88.134.7
+deny from 141.95.151.65
+deny from 103.163.186.254
+deny from 172.177.11.133
+deny from 40.77.167.189
+deny from 74.235.222.153
+deny from 137.184.222.107
+deny from 142.93.153.3
+
+deny from 66.248.202.7
+deny from 91.199.212.132
